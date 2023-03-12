@@ -1,33 +1,16 @@
-# webscrapper
-Project Name
-This project is a web scraping application built with Python and Django. It scrapes a website for data and presents it to the user in a readable format.
+<h1 align="center">Web Scraper</h1>
 
-Table of Contents
-Installation
-Usage
-Contributing
-License
-Installation
-To use this project, you will need to have Python and Django installed on your computer. You can install them using the following commands:
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python 3.8+">
+</p>
 
-bash
-Copy code
-pip install django
-Once you have installed Django, you can clone this repository using the following command:
+<h2>Description</h2>
 
-bash
-Copy code
-git clone https://github.com/yourusername/projectname.git
-Usage
-To run the application, navigate to the project directory and enter the following command:
+This is a web scraper built with Python and Django. It allows users to enter a URL and scrape the content of the page, which is then displayed in a user-friendly format. Users can also download the scraped data in PDF, CSV, or JSON format.
 
-bash
-Copy code
-python manage.py runserver
-This will start the server and the application will be available at http://localhost:8000.
+<h2>Installation</h2>
 
-Contributing
-Contributions are welcome! If you would like to contribute to this project, please fork the repository and create a new branch. Once you have made your changes, submit a pull request and your changes will be reviewed.
+To run the web scraper on your local machine, you'll need to follow these steps:
 
-License
-This project is licensed under the MIT License.
+1. Clone the repository:
+
