@@ -13,4 +13,4 @@ This is a web scraper built with Python and Django. It allows users to enter a U
 To run the web scraper on your local machine, you'll need to follow these steps:
 
 1. Clone the repository:
-
+$ git clone https://github.com/yourusername/web-scraper.git
