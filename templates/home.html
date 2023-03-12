@@ -46,8 +46,8 @@
 	</style>
 	<link rel="stylesheet" href="{% static 'w3.css' %}">
 </head>
-<body><h1>Web Scraper</h1>
-	<div class="w3-center" ><img class="w3-round w3-hover-grayscale" src="{% static 'web-scraping.jpg' %}" width="50%"></div>
+<body><h1><b>Web Scraper</b></h1>
+	<div class="w3-center" ><img class="w3-round w3-hover-grayscale w3-card" src="{% static 'web-scrapings.jpg' %}" width="50%" height="400px"></div>
 	
 	<form method="post" action="{% url 'scrape' %}">
 		{% csrf_token %}
