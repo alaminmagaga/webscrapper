@@ -1,0 +1,61 @@
+<!--home.html-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Scraper</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			margin: 20px;
+			text-align: center;
+			font-size: 40px;
+			color: #333;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type="text"] {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			margin-bottom: 20px;
+			width: 400px;
+		}
+		button[type="submit"] {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+	<link rel="stylesheet" href="{% static 'w3.css' %}">
+</head>
+<body><h1>Web Scraper</h1>
+	<div class="w3-center" ><img class="w3-round w3-hover-grayscale" src="{% static 'ai.png' %}" width="50%"></div>
+	
+	<form method="post" action="{% url 'scrape' %}">
+		{% csrf_token %}
+		<input type="text" name="url" placeholder="Enter URL here...">
+		<button type="submit">Scrape</button>
+	</form>
+
+	<br>
+
+</body>
+</html>

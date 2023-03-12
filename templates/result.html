@@ -1,0 +1,109 @@
+<!--result.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scraped Data</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			overflow-y: scroll; 
+			height: 500px; 
+		}
+
+		h1 {
+			font-size: 36px;
+			color: #333;
+			margin-top: 0;
+		}
+
+		h2 {
+			font-size: 24px;
+			color: #333;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #666;
+			line-height: 1.5;
+			margin-top: 0;
+		}
+
+		
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+
+	
+		.button:hover {
+			background-color: #3e8e41;
+		}
+
+		
+	</style>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<br><br>
+	<div class="container">
+		<h1>{{ title }}</h1>
+		{% for heading in headings %}
+			<h2>{{ heading }}</h2>
+		{% endfor %}
+		{% for paragraph in paragraphs %}
+			<p>{{ paragraph }}</p>
+		{% endfor %}
+		
+	</div>
+	
+	<br><br>
+	
+	   
+	<div class="w3-container" style="margin:auto; width:50%; text-align:center;">
+		<form method="POST" action="{% url 'download_file' %}">
+			{% csrf_token %}
+			<h3>Download Option</h3>
+		  
+			<select class="w3-select" id="download_type" name="download_type">
+			  <option value="" disabled selected>Choose your option</option>
+			  <option value="pdf">PDF</option>
+			  <option value="csv">CSV</option>
+			  <option value="json">JSON</option>
+			</select>
+		  <br><br>
+			<p><button type="submit" class="w3-btn w3-teal">Download</button></p>
+
+			<a href="{% url 'home' %}">
+				<button class="w3-button w3-teal w3-center" style="margin:auto">Go Back</button>
+			</a>
+		  
+		  </form>
+	</div>
+	<br><br>
+			  
+</body>
+</html>
