@@ -1,10 +1,11 @@
 <h1 align="center">Web Scraper</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python 3.8+">https://github.com/alaminmagaga/webscrapper/blob/master/Untitled.gif
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python 3.8+">
 </p>
 
 <h2>Description</h2>
+
 <p align="center">
   <img src="https://github.com/alaminmagaga/webscrapper/blob/master/Untitled.gif" alt="App">
 </p>
