@@ -4,11 +4,13 @@
   <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg" alt="Python 3.8+">
 </p>
 
-<h2>Description</h2>
-
 <p align="center">
   <img src="https://github.com/alaminmagaga/webscrapper/blob/master/Untitled.gif" alt="App">
 </p>
+
+<h2>Description</h2>
+
+
 
 
 This is a web scraper built with Python and Django. It allows users to enter a URL and scrape the content of the page, which is then displayed in a user-friendly format. Users can also download the scraped data in PDF, CSV, or JSON format.
