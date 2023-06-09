@@ -24,11 +24,6 @@ This web scraper application is built using Python and Django. It allows users t
 To run the web scraper locally, follow these steps:
 
 1. Clone this repository to your local machine using the following command:
-
-
-<h2>Installation</h2>
-
-To run the web scraper on your local machine, you'll need to follow these steps:
 <br>git clone git clone https://github.com/alaminmagaga/webscrapper.git
 
 2. Change to the project directory:
@@ -80,4 +75,21 @@ Contributions are welcome! If you encounter any issues with the web scraper or w
 1. Fork the repository on GitHub.
 
 2. Create a new branch from the main branch.
+ ```
+ git checkout -b my-branch
+  ```
+  
+3. Make the desired changes and commit them with descriptive commit messages.
+```
+git commit -m "Add feature or fix issue"
+```
+
+4. Push the branch to your forked repository.
+```
+git push origin my-branch
+```
+
+5. Open a pull request on the original repository, describing the changes you made.
+
+
 
