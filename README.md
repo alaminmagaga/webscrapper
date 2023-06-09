@@ -20,16 +20,21 @@ This is a web scraper built with Python and Django. It allows users to enter a U
 To run the web scraper on your local machine, you'll need to follow these steps:
 
 1. Clone the repository:
+```
 $ git clone https://github.com/alaminmagaga/webscrapper.git
+```
 
 2. Install the dependencies:
-
+```
 $ cd web-scraper
-$ pip install -r requirements.txt
+```
+
+```$ pip install -r requirements.txt
+```
 
 3. Run the Django server:
-
-$ python manage.py runserver
+```$ python manage.py runserver
+```
 
 4. Open a web browser and navigate to http://localhost:8000 to use the web scraper.
 
@@ -63,6 +68,3 @@ $ git push origin new-feature
 
 5. Submit a pull request.
 
-<h2>License</h2>
-
-This project is licensed under the MIT License. See the LICENSE file for details.
